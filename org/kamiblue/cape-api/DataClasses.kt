@@ -1,3 +1,7 @@
+import com.google.gson.annotations.SerializedName
+import java.util.*
+import kotlin.collections.ArrayList
+
 data class CapeUser(
         val id: Long,
         var capes: ArrayList<Cape>,
@@ -6,11 +10,30 @@ data class CapeUser(
 )
 
 data class Cape(
-        @SerializedName("player_uuid")
+    @SerializedName("player_uuid")
         var playerUUID: String?,
-        @SerializedName("cape_uuid")
+    @SerializedName("cape_uuid")
         val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
-        val type: CapeType
+    val type: CapeType
+)
+
+data class MojangName(
+    val name: String,
+    val changedToAt: Long?
+)
+
+data class MojangProfile(
+    val name: String,
+    @SerializedName("id")
+    val uuidWithoutDash: String,
+    val uuid: String = uuidWithoutDash.insertDashes()
+)
+
+data class User(
+    val uuid: String,
+    val names: List<MojangName>,
+    val currentMojangName: MojangName = names.last(),
+    val currentName: String = currentMojangName.name
 )
 
 enum class CapeType(val realName: String, val imageKey: String) {
@@ -20,23 +43,3 @@ enum class CapeType(val realName: String, val imageKey: String) {
     DONOR("Donor", "donator2"),
     INVITER("Inviter", "inviter")
 }
-
-data class User(
-    val uuid: String,
-    val names: List<MojangName>,
-    val currentMojangName: MojangName = names.last(),
-    val currentName: String = currentMojangName.name
-)
-
-data class MojangName(
-        val name: String,
-        val changedToAt: Long?
-)
-
-data class MojangProfile(
-        val name: String,
-        @SerializedName("id")
-        val uuidWithoutDash: String,
-        val uuid: String = uuidWithoutDash.insertDashes()
-)
-
