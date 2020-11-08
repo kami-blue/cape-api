@@ -1,3 +1,5 @@
+package org.kamiblue.cape-api
+
 import MojangUtils.insertDashes
 import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
