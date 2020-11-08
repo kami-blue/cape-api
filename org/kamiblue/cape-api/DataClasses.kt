@@ -20,3 +20,23 @@ enum class CapeType(val realName: String, val imageKey: String) {
     DONOR("Donor", "donator2"),
     INVITER("Inviter", "inviter")
 }
+
+data class User(
+    val uuid: String,
+    val names: List<MojangName>,
+    val currentMojangName: MojangName = names.last(),
+    val currentName: String = currentMojangName.name
+)
+
+data class MojangName(
+        val name: String,
+        val changedToAt: Long?
+)
+
+data class MojangProfile(
+        val name: String,
+        @SerializedName("id")
+        val uuidWithoutDash: String,
+        val uuid: String = uuidWithoutDash.insertDashes()
+)
+

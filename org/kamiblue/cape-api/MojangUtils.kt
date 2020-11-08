@@ -77,23 +77,3 @@ fun String.insertDashes() = StringBuilder(this)
     .toString()
 
 fun String.isUUID() = Regex("[a-z0-9].{7}-[a-z0-9].{3}-[a-z0-9].{3}-[a-z0-9].{3}-[a-z0-9].{11}").matches(this)
-
-data class User(
-    val uuid: String,
-    val names: List<MojangName>,
-    val currentMojangName: MojangName = names.last(),
-    val currentName: String = currentMojangName.name
-)
-
-data class MojangName(
-        val name: String,
-        val changedToAt: Long?
-)
-
-data class MojangProfile(
-        val name: String,
-        @SerializedName("id")
-        val uuidWithoutDash: String,
-        val uuid: String = uuidWithoutDash.insertDashes()
-)
-
