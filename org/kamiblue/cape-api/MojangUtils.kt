@@ -76,3 +76,12 @@ fun String.insertDashes() = StringBuilder(this)
     .toString()
 
 fun String.isUUID() = Regex("[a-z0-9].{7}-[a-z0-9].{3}-[a-z0-9].{3}-[a-z0-9].{3}-[a-z0-9].{11}").matches(this)
+
+/** @return a properly formatted UUID, null if can't be formatted */
+fun String.fixedUUID(): String? {
+    if (this.isUUID()) return this
+    if (length < 32) return null
+    val fixed = this.insertDashes()
+    if (fixed.isUUID()) return fixed
+    return null
+}
