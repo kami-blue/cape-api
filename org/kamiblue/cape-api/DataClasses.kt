@@ -1,5 +1,3 @@
-package org.kamiblue.cape-api
-
 data class CapeUser(
         val id: Long,
         var capes: ArrayList<Cape>,
