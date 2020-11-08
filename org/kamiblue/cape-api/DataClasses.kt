@@ -41,7 +41,11 @@ data class User(
 data class CapeColor(
     val primary: String,
     val border: String
-)
+) {
+    override fun toString(): String {
+        return "#$primary, #$border"
+    }
+}
 
 enum class CapeType(val realName: String, val imageKey: String) {
     BOOSTER("Booster", "booster"),
