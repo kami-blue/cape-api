@@ -21,6 +21,15 @@
     "id": 563138570953687061,
     "capes": [
       {
+        "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
+        "cape_uuid": "d33d3",
+        "type": "CONTEST",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
         "cape_uuid": "b4dd8",
         "type": "CONTEST",
         "color": {
@@ -34,15 +43,6 @@
         "color": {
           "primary": "9b90ff",
           "border": "ff0000"
-        }
-      },
-      {
-        "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
-        "cape_uuid": "d33d3",
-        "type": "CONTEST",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
         }
       },
       {
