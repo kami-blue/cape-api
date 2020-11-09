@@ -21,20 +21,20 @@
     "id": 563138570953687061,
     "capes": [
       {
-        "cape_uuid": "a8e75",
-        "type": "CONTEST",
-        "color": {
-          "primary": "e68cc8",
-          "border": "ffa0e6"
-        }
-      },
-      {
         "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
         "cape_uuid": "d33d3",
         "type": "CONTEST",
         "color": {
           "primary": "333333",
-          "border": "211f1f"
+          "border": "ff0000"
+        }
+      },
+      {
+        "cape_uuid": "a8e75",
+        "type": "CONTEST",
+        "color": {
+          "primary": "e68cc8",
+          "border": "ffa0e6"
         }
       },
       {
