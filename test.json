@@ -1,0 +1,50 @@
+[
+  {
+    "id": 334854726233489409,
+    "capes": [
+      {
+        "cape_uuid": "df57f",
+        "type": "CONTRIBUTOR"
+      },
+      {
+        "cape_uuid": "ac06c",
+        "type": "CONTRIBUTOR"
+      },
+      {
+        "cape_uuid": "e3531",
+        "type": "CONTRIBUTOR"
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 563138570953687061,
+    "capes": [
+      {
+        "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
+        "cape_uuid": "d33d3",
+        "type": "CONTEST",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "player_uuid": "a1bc77a1-a243-42d2-9ada-5684756a358c",
+        "cape_uuid": "dd7fe",
+        "type": "DONOR"
+      },
+      {
+        "player_uuid": "f2971de0-d91e-4732-8386-93e0f76e1465",
+        "cape_uuid": "48603",
+        "type": "INVITER"
+      },
+      {
+        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
+        "cape_uuid": "4e8ee",
+        "type": "DONOR"
+      }
+    ],
+    "is_premium": true
+  }
+]
