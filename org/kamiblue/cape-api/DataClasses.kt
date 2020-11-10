@@ -57,9 +57,9 @@ enum class CapeType(val realName: String, val imageKey: String) {
 }
 
 fun getColor(type: CapeType) = when (type) {
-    BOOSTER -> CapeColor("f1a2dd", "d68cc5")
+    BOOSTER -> CapeColor("e68cc8", "ffa0e6")
     CONTEST -> CapeColor("90b3ff", "3869d1")
     CONTRIBUTOR -> CapeColor("333333", "211f1f")
-    INVITER -> CapeColor("de90ff", "9c30c9")
+    INVITER -> CapeColor("de90ff", "9c30c9") // todo need better colors
     else -> CapeColor("9b90ff", "8778ff") // DONOR and SPECIAL
 }
