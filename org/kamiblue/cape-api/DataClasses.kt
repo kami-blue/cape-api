@@ -1,20 +1,19 @@
 import CapeType.*
 import com.google.gson.annotations.SerializedName
 import java.util.*
-import kotlin.collections.ArrayList
 
 data class CapeUser(
-        val id: Long,
-        var capes: ArrayList<Cape>,
-        @SerializedName("is_premium")
-        var isPremium: Boolean = false
+    val id: Long,
+    var capes: ArrayList<Cape>,
+    @SerializedName("is_premium")
+    var isPremium: Boolean = false
 )
 
 data class Cape(
     @SerializedName("player_uuid")
-        var playerUUID: String?,
+    var playerUUID: String?,
     @SerializedName("cape_uuid")
-        val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
+    val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
     val type: CapeType,
     var color: CapeColor = getColor(type)
 )
@@ -63,3 +62,4 @@ fun getColor(type: CapeType) = when (type) {
     INVITER -> CapeColor("de90ff", "9c30c9") // todo need better colors
     else -> CapeColor("9b90ff", "8778ff") // DONOR and SPECIAL
 }
+
