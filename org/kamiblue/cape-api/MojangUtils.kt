@@ -1,7 +1,10 @@
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import okhttp3.OkHttpClient
-import okhttp3.Request
+import java.io.BufferedInputStream
+import java.io.InputStream
+import java.net.HttpURLConnection
+import java.net.URL
+import java.util.*
 
 val cachedNames = hashMapOf<String, String>() // UUID, name
 
@@ -42,30 +45,52 @@ fun getProfileFromName(name: String): MojangProfile? {
 }
 
 fun getNamesFromUUID(uuid: String): List<MojangName>? {
-    if (!uuid.isUUID()) return null
+    if (uuid.fixedUUID() == null) return null
 
     val url = "https://api.mojang.com/user/profiles/$uuid/names".replace("-", "")
-    val request = Request.Builder().url(url).build()
-    val response = OkHttpClient().newCall(request).execute()
-    val json = response.body()?.string() ?: return null
+    val response = request(url)
 
-    if (json.isEmpty()) return null // uuid doesn't exist
+    if (response?.isEmpty() != false) return null // uuid doesn't exist
 
     // this will just return null if it somehow fails, no exception thrown
-    return Gson().fromJson(json, object : TypeToken<List<MojangName>>() {}.type)
+    return Gson().fromJson(response, object : TypeToken<List<MojangName>>() {}.type)
 }
 
 private fun getProfileFromName0(name: String): MojangProfile? {
     if (name.isUUID()) return null
 
     val url = "https://api.mojang.com/users/profiles/minecraft/$name"
-    val request = Request.Builder().url(url).build()
-    val response = OkHttpClient().newCall(request).execute()
-    val json = response.body()?.string() ?: return null
+    val response = request(url)
 
-    if (json.isEmpty()) return null // name doesn't exist
+    if (response?.isEmpty() != false) return null // name doesn't exist
 
-    return Gson().fromJson(json, MojangProfile::class.java)
+    return Gson().fromJson(response, MojangProfile::class.java)
+}
+
+private fun request(url: String): String? {
+    return try {
+        val connection = URL(url).openConnection() as HttpURLConnection
+        connection.connectTimeout = 5000
+        connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8")
+        connection.doOutput = true
+        connection.doInput = true
+        connection.requestMethod = "GET"
+
+        // read the response
+        val inputStream: InputStream = BufferedInputStream(connection.inputStream)
+        val response = convertStreamToString(inputStream)
+        inputStream.close()
+        connection.disconnect()
+        response
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
+    }
+}
+
+private fun convertStreamToString(inputStream: InputStream): String {
+    val scanner = Scanner(inputStream).useDelimiter("\\A")
+    return if (scanner.hasNext()) scanner.next() else "/"
 }
 
 fun String.insertDashes() = StringBuilder(this)
