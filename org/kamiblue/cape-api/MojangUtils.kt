@@ -48,7 +48,7 @@ fun getNamesFromUUID(uuid: String): List<MojangName>? {
     if (uuid.fixedUUID() == null) return null
 
     val url = "https://api.mojang.com/user/profiles/$uuid/names".replace("-", "")
-    val response = request(url)
+    val response = getRequest(url)
 
     if (response?.isEmpty() != false) return null // uuid doesn't exist
 
@@ -60,14 +60,14 @@ private fun getProfileFromName0(name: String): MojangProfile? {
     if (name.isUUID()) return null
 
     val url = "https://api.mojang.com/users/profiles/minecraft/$name"
-    val response = request(url)
+    val response = getRequest(url)
 
     if (response?.isEmpty() != false) return null // name doesn't exist
 
     return Gson().fromJson(response, MojangProfile::class.java)
 }
 
-private fun request(url: String): String? {
+fun getRequest(url: String): String? {
     return try {
         val connection = URL(url).openConnection() as HttpURLConnection
         connection.connectTimeout = 5000
