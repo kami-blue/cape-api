@@ -4,10 +4,21 @@ import java.util.*
 
 data class CapeUser(
     val id: Long,
-    var capes: ArrayList<Cape>,
+    val capes: ArrayList<Cape>,
     @SerializedName("is_premium")
     var isPremium: Boolean = false
-)
+) {
+    override fun equals(other: Any?): Boolean {
+        return this === other
+                || other is CapeUser
+                && other.id == this.id
+                && other.capes == capes
+    }
+
+    override fun hashCode(): Int {
+        return 31 * id.hashCode() + capes.hashCode()
+    }
+}
 
 data class Cape(
     @SerializedName("player_uuid")
@@ -16,7 +27,18 @@ data class Cape(
     val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
     val type: CapeType,
     var color: CapeColor = getColor(type)
-)
+) {
+    override fun equals(other: Any?): Boolean {
+        return this === other
+                || other is Cape
+                && other.capeUUID == capeUUID
+                && other.type == other.type
+    }
+
+    override fun hashCode(): Int {
+        return 31 * capeUUID.hashCode() + type.hashCode()
+    }
+}
 
 data class MojangName(
     val name: String,
