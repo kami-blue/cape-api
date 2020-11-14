@@ -5,10 +5,10 @@ import org.kamiblue.capeapi.CapeType.*
 import java.util.*
 
 data class CapeUser(
-        val id: Long,
-        val capes: ArrayList<Cape>,
-        @SerializedName("is_premium")
-        var isPremium: Boolean = false
+    val id: Long,
+    val capes: ArrayList<Cape>,
+    @SerializedName("is_premium")
+    var isPremium: Boolean = false
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
@@ -23,12 +23,12 @@ data class CapeUser(
 }
 
 data class Cape(
-        @SerializedName("player_uuid")
-        var playerUUID: String?,
-        @SerializedName("cape_uuid")
-        val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
-        val type: CapeType,
-        var color: CapeColor = getColor(type)
+    @SerializedName("player_uuid")
+    var playerUUID: String?,
+    @SerializedName("cape_uuid")
+    val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
+    val type: CapeType,
+    var color: CapeColor = getColor(type)
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
@@ -43,27 +43,27 @@ data class Cape(
 }
 
 data class MojangName(
-        val name: String,
-        val changedToAt: Long?
+    val name: String,
+    val changedToAt: Long?
 )
 
 data class MojangProfile(
-        val name: String,
-        @SerializedName("id")
-        val uuidWithoutDash: String,
-        val uuid: String = uuidWithoutDash.insertDashes()
+    val name: String,
+    @SerializedName("id")
+    val uuidWithoutDash: String,
+    val uuid: String = uuidWithoutDash.insertDashes()
 )
 
 data class User(
-        val uuid: String,
-        val names: List<MojangName>,
-        val currentMojangName: MojangName = names.last(),
-        val currentName: String = currentMojangName.name
+    val uuid: String,
+    val names: List<MojangName>,
+    val currentMojangName: MojangName = names.last(),
+    val currentName: String = currentMojangName.name
 )
 
 data class CapeColor(
-        val primary: String,
-        val border: String
+    val primary: String,
+    val border: String
 ) {
     override fun toString(): String {
         return "#$primary, #$border"
