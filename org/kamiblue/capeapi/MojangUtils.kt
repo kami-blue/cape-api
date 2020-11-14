@@ -1,3 +1,5 @@
+package org.kamiblue.capeapi
+
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.BufferedInputStream
@@ -41,7 +43,7 @@ fun getFromName(name: String): User? {
 
 fun getProfileFromName(name: String): MojangProfile? {
     val foundProfile = getProfileFromName0(name) ?: return null
-    return MojangProfile(foundProfile.name, foundProfile.uuidWithoutDash) // used because Gson doesn't serialize uuidWithoutDash.insertDashes()
+    return MojangProfile(foundProfile.name, foundProfile.uuidWithoutDash) // used because Gson doesn't serialize uuidWithoutDash.org.kamiblue.capeapi.insertDashes()
 }
 
 fun getNamesFromUUID(uuid: String): List<MojangName>? {

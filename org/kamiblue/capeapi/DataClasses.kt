@@ -1,5 +1,7 @@
-import CapeType.*
+package org.kamiblue.capeapi
+
 import com.google.gson.annotations.SerializedName
+import org.kamiblue.capeapi.CapeType.*
 import java.util.*
 
 data class CapeUser(
@@ -21,12 +23,12 @@ data class CapeUser(
 }
 
 data class Cape(
-    @SerializedName("player_uuid")
+        @SerializedName("player_uuid")
     var playerUUID: String?,
-    @SerializedName("cape_uuid")
+        @SerializedName("cape_uuid")
     val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
-    val type: CapeType,
-    var color: CapeColor = getColor(type)
+        val type: CapeType,
+        var color: CapeColor = getColor(type)
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
@@ -53,10 +55,10 @@ data class MojangProfile(
 )
 
 data class User(
-    val uuid: String,
-    val names: List<MojangName>,
-    val currentMojangName: MojangName = names.last(),
-    val currentName: String = currentMojangName.name
+        val uuid: String,
+        val names: List<MojangName>,
+        val currentMojangName: MojangName = names.last(),
+        val currentName: String = currentMojangName.name
 )
 
 data class CapeColor(
