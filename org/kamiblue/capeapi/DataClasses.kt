@@ -5,10 +5,10 @@ import org.kamiblue.capeapi.CapeType.*
 import java.util.*
 
 data class CapeUser(
-        val id: Long,
-        val capes: ArrayList<Cape>,
-        @SerializedName("is_premium")
-        var isPremium: Boolean = false
+    val id: Long,
+    val capes: ArrayList<Cape>,
+    @SerializedName("is_premium")
+    var isPremium: Boolean = false
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
@@ -23,12 +23,12 @@ data class CapeUser(
 }
 
 data class Cape(
-        @SerializedName("cape_uuid")
-        val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
-        @SerializedName("player_uuid")
-        var playerUUID: UUID? = null,
-        val type: CapeType,
-        var color: CapeColor = type.color
+    @SerializedName("cape_uuid")
+    val capeUUID: String = UUID.randomUUID().toString().substring(0, 5),
+    @SerializedName("player_uuid")
+    var playerUUID: UUID? = null,
+    val type: CapeType,
+    var color: CapeColor = type.color
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
@@ -43,8 +43,8 @@ data class Cape(
 }
 
 data class CapeColor(
-        val primary: String,
-        val border: String
+    val primary: String,
+    val border: String
 ) {
     override fun toString(): String {
         return "#$primary, #$border"
@@ -52,8 +52,8 @@ data class CapeColor(
 }
 
 data class PlayerProfile(
-        val uuid: UUID,
-        val name: String
+    val uuid: UUID,
+    val name: String
 ) {
     override fun equals(other: Any?): Boolean {
         return this === other
