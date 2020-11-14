@@ -1,5 +1,7 @@
-import CapeType.*
+package org.kamiblue.capeapi
+
 import com.google.gson.annotations.SerializedName
+import org.kamiblue.capeapi.CapeType.*
 import java.util.*
 
 data class CapeUser(
