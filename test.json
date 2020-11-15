@@ -1,5 +1,51 @@
 [
   {
+    "id": 563138570953687061,
+    "capes": [
+      {
+        "cape_uuid": "b4dd8",
+        "type": "CONTEST",
+        "color": {
+          "primary": "ffffff",
+          "border": "0000bb"
+        }
+      },
+      {
+        "cape_uuid": "d33d3",
+        "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
+        "type": "CONTEST",
+        "color": {
+          "primary": "ffffff",
+          "border": "000000"
+        }
+      },
+      {
+        "cape_uuid": "a8e75",
+        "type": "CONTEST",
+        "color": {
+          "primary": "ffffff",
+          "border": "000000"
+        }
+      },
+      {
+        "cape_uuid": "dd7fe",
+        "player_uuid": "a1bc77a1-a243-42d2-9ada-5684756a358c",
+        "type": "DONOR"
+      },
+      {
+        "cape_uuid": "48603",
+        "player_uuid": "f2971de0-d91e-4732-8386-93e0f76e1465",
+        "type": "INVITER"
+      },
+      {
+        "cape_uuid": "4e8ee",
+        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
+        "type": "DONOR"
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 334854726233489409,
     "capes": [
       {
@@ -16,51 +62,5 @@
       }
     ],
     "is_premium": false
-  },
-  {
-    "id": 563138570953687061,
-    "capes": [
-      {
-        "cape_uuid": "b4dd8",
-        "type": "CONTEST",
-        "color": {
-          "primary": "ffffff",
-          "border": "0000bb"
-        }
-      },
-      {
-        "player_uuid": "9b886361-d234-441d-8540-5201f39e825d",
-        "cape_uuid": "d33d3",
-        "type": "CONTEST",
-        "color": {
-          "primary": "ffffff",
-          "border": "000000"
-        }
-      },
-      {
-        "cape_uuid": "a8e75",
-        "type": "CONTEST",
-        "color": {
-          "primary": "ffffff",
-          "border": "000000"
-        }
-      },
-      {
-        "player_uuid": "a1bc77a1-a243-42d2-9ada-5684756a358c",
-        "cape_uuid": "dd7fe",
-        "type": "DONOR"
-      },
-      {
-        "player_uuid": "f2971de0-d91e-4732-8386-93e0f76e1465",
-        "cape_uuid": "48603",
-        "type": "INVITER"
-      },
-      {
-        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
-        "cape_uuid": "4e8ee",
-        "type": "DONOR"
-      }
-    ],
-    "is_premium": true
   }
 ]
