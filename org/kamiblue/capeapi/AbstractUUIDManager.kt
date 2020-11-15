@@ -1,6 +1,5 @@
 package org.kamiblue.capeapi
 
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
@@ -14,7 +13,8 @@ abstract class AbstractUUIDManager(filePath: String) {
     protected open val maxCacheSize: Int get() = 500
 
     private val file = File(filePath)
-    private val gson: Gson = GsonBuilder().setPrettyPrinting().create()
+    private val parser = JsonParser()
+    private val gson = GsonBuilder().setPrettyPrinting().create()
     private val nameProfileMap = Collections.synchronizedMap(LinkedHashMap<String, PlayerProfile>())
     private val uuidNameMap = Collections.synchronizedMap(LinkedHashMap<UUID, PlayerProfile>())
 
@@ -70,8 +70,8 @@ abstract class AbstractUUIDManager(filePath: String) {
             logError("Response is null or blank, internet might be down")
             null
         } else {
-            val jsonElement = JsonParser.parseString(response)
             try {
+                val jsonElement = parser.parse(response)
                 if (isUUID) {
                     val name = jsonElement.asJsonArray.last().asJsonObject["name"].asString
                     PlayerProfile(UUID.fromString(nameOrUUID), name)
