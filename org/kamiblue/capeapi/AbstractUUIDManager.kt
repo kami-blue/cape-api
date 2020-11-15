@@ -67,7 +67,7 @@ abstract class AbstractUUIDManager(filePath: String) {
         val response = if (isUUID) requestProfileFromUUID(nameOrUUID) else requestProfileFromName(nameOrUUID)
 
         return if (response.isNullOrBlank()) {
-            log("Response is null or blank, internet might be down")
+            logError("Response is null or blank, internet might be down")
             null
         } else {
             val jsonElement = JsonParser.parseString(response)
@@ -81,7 +81,7 @@ abstract class AbstractUUIDManager(filePath: String) {
                     PlayerProfile(UUIDUtils.fixUUID(id)!!, name) // let it throw a NPE if failed to parse the string to UUID
                 }
             } catch (e: Exception) {
-                log("Failed parsing profile")
+                logError("Failed parsing profile")
                 e.printStackTrace()
                 null
             }
@@ -113,7 +113,7 @@ abstract class AbstractUUIDManager(filePath: String) {
                 response
             }
         } catch (e: Exception) {
-            log("Failed requesting from Mojang API")
+            logError("Failed requesting from Mojang API")
             e.printStackTrace()
             null
         }
@@ -133,10 +133,10 @@ abstract class AbstractUUIDManager(filePath: String) {
             nameProfileMap.clear()
             uuidNameMap.putAll(cacheList.associateBy { it.uuid })
             nameProfileMap.putAll(cacheList.associateBy { it.name.toLowerCase() })
-            log("UUID cache loaded")
+            logError("UUID cache loaded")
             true
         } catch (e: Exception) {
-            log("Failed loading UUID cache")
+            logError("Failed loading UUID cache")
             e.printStackTrace()
             false
         } finally {
@@ -152,7 +152,7 @@ abstract class AbstractUUIDManager(filePath: String) {
             println("UUID cache saved")
             true
         } catch (e: Exception) {
-            log("Failed saving UUID cache")
+            logError("Failed saving UUID cache")
             e.printStackTrace()
             false
         } finally {
@@ -178,6 +178,6 @@ abstract class AbstractUUIDManager(filePath: String) {
         }
     }
 
-    protected abstract fun log(message: String)
+    protected abstract fun logError(message: String)
 
 }
