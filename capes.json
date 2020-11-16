@@ -1,0 +1,26 @@
+[
+  {
+    "id": 563138570953687061,
+    "capes": [
+      {
+        "cape_uuid": "d5231",
+        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "7d258",
+        "player_uuid": "733ac0f1-84a0-4990-81cc-8e4480b75a6c",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  }
+]
