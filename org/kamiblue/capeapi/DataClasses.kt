@@ -72,6 +72,6 @@ enum class CapeType(val realName: String, val imageKey: String, val color: CapeC
     CONTRIBUTOR("Contributor", "github1", CapeColor("333333", "211f1f")),
     DONOR("Donor", "donator2", CapeColor("9b90ff", "8778ff")),
     INVITER("Inviter", "inviter", CapeColor("de90ff", "9c30c9")), // todo need better colors
-    SPECIAL("Special", "special", CapeColor("9b90ff", "8778ff"))
+    SPECIAL("Special", "giveaway", CapeColor("9b90ff", "8778ff"))
 }
 
