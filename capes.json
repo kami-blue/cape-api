@@ -41,6 +41,22 @@
           "primary": "333333",
           "border": "211f1f"
         }
+      },
+      {
+        "cape_uuid": "5dd9a",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "3efb6",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
       }
     ],
     "is_premium": false
