@@ -49,15 +49,6 @@
           "primary": "333333",
           "border": "211f1f"
         }
-      },
-      {
-        "cape_uuid": "3efb6",
-        "player_uuid": "5de0fdb2-bed5-45b6-bb0a-e716de91c6b5",
-        "type": "CONTEST",
-        "color": {
-          "primary": "696969",
-          "border": "420420"
-        }
       }
     ],
     "is_premium": false
