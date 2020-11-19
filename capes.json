@@ -494,6 +494,7 @@
     "capes": [
       {
         "cape_uuid": "b445d",
+        "player_uuid": "f4fd48dc-cd7c-4b54-b17d-df404e8fa5e9",
         "type": "SPECIAL",
         "color": {
           "primary": "9b90ff",
