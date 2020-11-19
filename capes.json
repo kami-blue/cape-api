@@ -21,8 +21,8 @@
         "player_uuid": "fccff21b-9bb8-4923-bd55-189c1b1b3f0a",
         "type": "CONTEST",
         "color": {
-          "primary": "90b3ff",
-          "border": "3869d1"
+          "primary": "f7a8b8",
+          "border": "55cdfc"
         }
       }
     ],
@@ -33,6 +33,7 @@
     "capes": [
       {
         "cape_uuid": "b06fe",
+        "player_uuid": "9a29c5d1-32bc-4c6d-aea9-736859c501b3",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
@@ -94,6 +95,7 @@
     "capes": [
       {
         "cape_uuid": "d67e2",
+        "player_uuid": "215438b5-0906-4886-b7bc-fc0a702bf268",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -102,6 +104,7 @@
       },
       {
         "cape_uuid": "e66c5",
+        "player_uuid": "7d2a5aae-e421-4167-8f86-ced2a8e4432b",
         "type": "CONTEST",
         "color": {
           "primary": "62928e",
