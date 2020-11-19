@@ -38,6 +38,20 @@
     "is_premium": false
   },
   {
+    "id": 209554152584380420,
+    "capes": [
+      {
+        "cape_uuid": "17441",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 563138570953687061,
     "capes": [
       {
@@ -142,6 +156,20 @@
     "is_premium": false
   },
   {
+    "id": 186138545642143746,
+    "capes": [
+      {
+        "cape_uuid": "d74a1",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 245404909229441024,
     "capes": [
       {
@@ -161,6 +189,7 @@
     "capes": [
       {
         "cape_uuid": "d47a0",
+        "player_uuid": "0fa273ed-448a-467a-b126-ef44bfda8ab7",
         "type": "CONTEST",
         "color": {
           "primary": "90b3ff",
