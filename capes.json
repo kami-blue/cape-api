@@ -54,6 +54,14 @@
           "primary": "9b90ff",
           "border": "8778ff"
         }
+      },
+      {
+        "cape_uuid": "3248d",
+        "type": "BOOSTER",
+        "color": {
+          "primary": "e68cc8",
+          "border": "ffa0e6"
+        }
       }
     ],
     "is_premium": true
