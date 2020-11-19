@@ -167,14 +167,6 @@
           "primary": "9b90ff",
           "border": "8778ff"
         }
-      },
-      {
-        "cape_uuid": "8ab3d",
-        "type": "CONTRIBUTOR",
-        "color": {
-          "primary": "333333",
-          "border": "211f1f"
-        }
       }
     ],
     "is_premium": false
@@ -189,6 +181,20 @@
         "color": {
           "primary": "f7a8b8",
           "border": "55cdfc"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 297096161842429963,
+    "capes": [
+      {
+        "cape_uuid": "ffb33",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
         }
       }
     ],
