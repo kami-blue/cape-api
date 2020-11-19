@@ -29,6 +29,20 @@
     "is_premium": false
   },
   {
+    "id": 550907912281915412,
+    "capes": [
+      {
+        "cape_uuid": "b06fe",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 557429876618166283,
     "capes": [
       {
@@ -84,6 +98,14 @@
         "color": {
           "primary": "333333",
           "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "e66c5",
+        "type": "CONTEST",
+        "color": {
+          "primary": "62928e",
+          "border": "926266"
         }
       }
     ],
