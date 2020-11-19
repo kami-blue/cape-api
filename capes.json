@@ -102,6 +102,7 @@
     "capes": [
       {
         "cape_uuid": "480ed",
+        "player_uuid": "aa7254c6-1ebb-4feb-a667-ed0b47ad2ee9",
         "type": "INVITER",
         "color": {
           "primary": "de90ff",
