@@ -1,5 +1,19 @@
 [
   {
+    "id": 308450772641644544,
+    "capes": [
+      {
+        "cape_uuid": "bfa5a",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 563138570953687061,
     "capes": [
       {
@@ -62,6 +76,20 @@
         "color": {
           "primary": "333333",
           "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 608038632254734391,
+    "capes": [
+      {
+        "cape_uuid": "3096c",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
         }
       }
     ],
