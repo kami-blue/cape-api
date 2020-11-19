@@ -306,6 +306,20 @@
     "is_premium": false
   },
   {
+    "id": 149011033053331457,
+    "capes": [
+      {
+        "cape_uuid": "6f420",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 608038632254734391,
     "capes": [
       {
@@ -474,6 +488,20 @@
       }
     ],
     "is_premium": true
+  },
+  {
+    "id": 594268731287273472,
+    "capes": [
+      {
+        "cape_uuid": "b445d",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
   },
   {
     "id": 608473296698212403,
