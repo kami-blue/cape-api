@@ -4,6 +4,7 @@
     "capes": [
       {
         "cape_uuid": "74b93",
+        "player_uuid": "54086beb-8ee8-4e36-8f26-f67901f6dd11",
         "type": "SPECIAL",
         "color": {
           "primary": "9b90ff",
@@ -91,6 +92,20 @@
         "color": {
           "primary": "9b90ff",
           "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 325510168265883658,
+    "capes": [
+      {
+        "cape_uuid": "480ed",
+        "type": "INVITER",
+        "color": {
+          "primary": "de90ff",
+          "border": "9c30c9"
         }
       }
     ],
@@ -226,6 +241,7 @@
     "capes": [
       {
         "cape_uuid": "7a6cb",
+        "player_uuid": "9840fbc1-cf9d-4e91-891e-5800598eea70",
         "type": "CONTEST",
         "color": {
           "primary": "90b3ff",
