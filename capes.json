@@ -167,6 +167,14 @@
           "primary": "9b90ff",
           "border": "8778ff"
         }
+      },
+      {
+        "cape_uuid": "8ab3d",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
       }
     ],
     "is_premium": false
@@ -224,6 +232,36 @@
       }
     ],
     "is_premium": false
+  },
+  {
+    "id": 223864295300136960,
+    "capes": [
+      {
+        "cape_uuid": "76a5d",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      },
+      {
+        "cape_uuid": "532d5",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "c7261",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
   },
   {
     "id": 557647554880208926,
