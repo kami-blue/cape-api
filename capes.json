@@ -403,6 +403,7 @@
       },
       {
         "cape_uuid": "9981c",
+        "player_uuid": "66e39412-964b-4d5b-89db-f37424ec95cc",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -411,6 +412,7 @@
       },
       {
         "cape_uuid": "f7a77",
+        "player_uuid": "17aafb35-df31-40b4-856b-aea66c67b1c3",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
