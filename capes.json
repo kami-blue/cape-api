@@ -327,6 +327,7 @@
     "capes": [
       {
         "cape_uuid": "29bb3",
+        "player_uuid": "b9c93d5a-8293-4771-b019-37febb941f3b",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
@@ -384,6 +385,7 @@
       },
       {
         "cape_uuid": "8f632",
+        "player_uuid": "9bb9c806-9976-4a61-838a-2b68f6335503",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -392,6 +394,7 @@
       },
       {
         "cape_uuid": "80255",
+        "player_uuid": "3ad8bd0f-0b06-4813-a3d2-1c8e3f3f0b7c",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
