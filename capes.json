@@ -372,6 +372,54 @@
           "primary": "9b90ff",
           "border": "8778ff"
         }
+      },
+      {
+        "cape_uuid": "6c1de",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "8f632",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "80255",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "9981c",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "f7a77",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "29fcb",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
       }
     ],
     "is_premium": true
