@@ -1,5 +1,34 @@
 [
   {
+    "id": 424854774748413963,
+    "capes": [
+      {
+        "cape_uuid": "74b93",
+        "player_uuid": "54086beb-8ee8-4e36-8f26-f67901f6dd11",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 209554152584380420,
+    "capes": [
+      {
+        "cape_uuid": "4f37f",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 563138570953687061,
     "capes": [
       {
@@ -13,7 +42,384 @@
       },
       {
         "cape_uuid": "7d258",
-        "player_uuid": "733ac0f1-84a0-4990-81cc-8e4480b75a6c",
+        "player_uuid": "459c1f6b-576b-429c-9074-b2693f4a39af",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 228077081324421121,
+    "capes": [
+      {
+        "cape_uuid": "3ce30",
+        "player_uuid": "39edc4c4-19ce-4b10-ae65-da6d56771a1a",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 703341270260514916,
+    "capes": [
+      {
+        "cape_uuid": "76778",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 722749468377612359,
+    "capes": [
+      {
+        "cape_uuid": "60c9b",
+        "player_uuid": "2b4a6e60-b9b8-4181-ba89-69684a79e409",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 325510168265883658,
+    "capes": [
+      {
+        "cape_uuid": "480ed",
+        "player_uuid": "aa7254c6-1ebb-4feb-a667-ed0b47ad2ee9",
+        "type": "INVITER",
+        "color": {
+          "primary": "de90ff",
+          "border": "9c30c9"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 308450772641644544,
+    "capes": [
+      {
+        "cape_uuid": "bfa5a",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 186138545642143746,
+    "capes": [
+      {
+        "cape_uuid": "d74a1",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 245404909229441024,
+    "capes": [
+      {
+        "cape_uuid": "75e22",
+        "player_uuid": "1e567ed0-1eba-4262-9073-085c23897dd9",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 472740093770072064,
+    "capes": [
+      {
+        "cape_uuid": "d47a0",
+        "player_uuid": "0fa273ed-448a-467a-b126-ef44bfda8ab7",
+        "type": "CONTEST",
+        "color": {
+          "primary": "1a1a1a",
+          "border": "010003"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 524269104576856110,
+    "capes": [
+      {
+        "cape_uuid": "97108",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 637302865047584788,
+    "capes": [
+      {
+        "cape_uuid": "fd531",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 557647554880208926,
+    "capes": [
+      {
+        "cape_uuid": "e826c",
+        "player_uuid": "8fef1f4c-4ae0-4c2d-a11b-632bd45484f3",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "85759",
+        "player_uuid": "2ee704b1-1f48-4065-93e6-a91e8ab6ae19",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "12aa3",
+        "player_uuid": "9efad9f6-220f-40fd-9511-517df55174aa",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "886b1",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 737399633172758608,
+    "capes": [
+      {
+        "cape_uuid": "536e4",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 688398900721352716,
+    "capes": [
+      {
+        "cape_uuid": "4a972",
+        "player_uuid": "9352a1db-5faf-45dc-9592-9631c9290548",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 609779091247333389,
+    "capes": [
+      {
+        "cape_uuid": "7a6cb",
+        "player_uuid": "9840fbc1-cf9d-4e91-891e-5800598eea70",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 550907912281915412,
+    "capes": [
+      {
+        "cape_uuid": "b06fe",
+        "player_uuid": "4fc626ce-f01a-4312-ab11-2eeed4a0cdf3",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "3248d",
+        "player_uuid": "9a29c5d1-32bc-4c6d-aea9-736859c501b3",
+        "type": "BOOSTER",
+        "color": {
+          "primary": "e68cc8",
+          "border": "ffa0e6"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 237237152495304704,
+    "capes": [
+      {
+        "cape_uuid": "58b76",
+        "player_uuid": "79c286f4-8bf0-4f78-b5f1-6f9f53baaf4a",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 389064678896041986,
+    "capes": [
+      {
+        "cape_uuid": "ff438",
+        "player_uuid": "251419ee-944b-4f63-ab17-8f2f3c2e1d03",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 289237701285117953,
+    "capes": [
+      {
+        "cape_uuid": "8b016",
+        "player_uuid": "085e953e-64b0-4294-a969-60a0ad741f67",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 149011033053331457,
+    "capes": [
+      {
+        "cape_uuid": "6f420",
+        "player_uuid": "71a78876-cb24-4919-8af5-abbf05c461ec",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 477974525519200256,
+    "capes": [
+      {
+        "cape_uuid": "29bb3",
+        "player_uuid": "b9c93d5a-8293-4771-b019-37febb941f3b",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "08c9b",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "cb657",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "f78d7",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "9d521",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "ebc61",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "6c1de",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -21,21 +427,268 @@
         }
       },
       {
-        "cape_uuid": "83b2e",
-        "type": "CONTEST",
+        "cape_uuid": "8f632",
+        "type": "CONTRIBUTOR",
         "color": {
-          "primary": "696969",
-          "border": "420420"
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "80255",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "9981c",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "f7a77",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "29fcb",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
         }
       }
     ],
     "is_premium": true
   },
   {
+    "id": 608038632254734391,
+    "capes": [
+      {
+        "cape_uuid": "3096c",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 665689454295646209,
+    "capes": [
+      {
+        "cape_uuid": "aee9d",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 368800039184760833,
+    "capes": [
+      {
+        "cape_uuid": "a2c1d",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 451814881134379020,
+    "capes": [
+      {
+        "cape_uuid": "1f819",
+        "player_uuid": "38261ef0-8037-4fbc-9515-8fa276ea58f3",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 738500031304171542,
+    "capes": [
+      {
+        "cape_uuid": "a0221",
+        "player_uuid": "a909ff12-fcf5-41ed-9b46-f5d70ce133d8",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 353871885722845188,
+    "capes": [
+      {
+        "cape_uuid": "17b58",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 554016483794092042,
+    "capes": [
+      {
+        "cape_uuid": "aa55a",
+        "player_uuid": "fccff21b-9bb8-4923-bd55-189c1b1b3f0a",
+        "type": "CONTEST",
+        "color": {
+          "primary": "f7a8b8",
+          "border": "55cdfc"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 297096161842429963,
+    "capes": [
+      {
+        "cape_uuid": "ffb33",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 557429876618166283,
+    "capes": [
+      {
+        "cape_uuid": "7f0b3",
+        "player_uuid": "24b7d986-0c34-4422-b9b2-87d80145b4d9",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 491954947185836032,
+    "capes": [
+      {
+        "cape_uuid": "d67e2",
+        "player_uuid": "215438b5-0906-4886-b7bc-fc0a702bf268",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      },
+      {
+        "cape_uuid": "e66c5",
+        "player_uuid": "7d2a5aae-e421-4167-8f86-ced2a8e4432b",
+        "type": "CONTEST",
+        "color": {
+          "primary": "58b068",
+          "border": "7394a4"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 223864295300136960,
+    "capes": [
+      {
+        "cape_uuid": "76a5d",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
+      },
+      {
+        "cape_uuid": "532d5",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "c7261",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 594268731287273472,
+    "capes": [
+      {
+        "cape_uuid": "b445d",
+        "player_uuid": "f4fd48dc-cd7c-4b54-b17d-df404e8fa5e9",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
+    "id": 608473296698212403,
+    "capes": [
+      {
+        "cape_uuid": "00e5f",
+        "player_uuid": "ce5fd994-e1b1-4ae5-8b83-36fd8cb2969b",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 334854726233489409,
     "capes": [
       {
         "cape_uuid": "02916",
+        "player_uuid": "61f845f0-2502-4459-9fb4-e46d2600281c",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -44,6 +697,7 @@
       },
       {
         "cape_uuid": "5dd9a",
+        "player_uuid": "5de0fdb2-bed5-45b6-bb0a-e716de91c6b5",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
