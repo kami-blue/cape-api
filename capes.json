@@ -302,7 +302,6 @@
     "capes": [
       {
         "cape_uuid": "b06fe",
-        "player_uuid": "4fc626ce-f01a-4312-ab11-2eeed4a0cdf3",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
@@ -311,7 +310,6 @@
       },
       {
         "cape_uuid": "3248d",
-        "player_uuid": "9a29c5d1-32bc-4c6d-aea9-736859c501b3",
         "type": "BOOSTER",
         "color": {
           "primary": "e68cc8",
