@@ -3,9 +3,8 @@ package org.kamiblue.capeapi
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
+import org.kamiblue.commons.utils.ConnectionUtils
 import java.io.*
-import java.net.HttpURLConnection
-import java.net.URL
 import java.util.*
 import kotlin.collections.LinkedHashMap
 
@@ -97,31 +96,10 @@ abstract class AbstractUUIDManager(filePath: String) {
     }
 
     private fun request(url: String): String? {
-        return try {
-            (URL(url).openConnection() as HttpURLConnection).run {
-                connectTimeout = 5000
-                setRequestProperty("Content-Type", "application/json; charset=UTF-8")
-                doOutput = true
-                doInput = true
-                requestMethod = "GET"
-
-                // read the response
-                val response = BufferedInputStream(inputStream).use {
-                    convertStreamToString(it)
-                }
-                disconnect()
-                response
-            }
-        } catch (e: Exception) {
+        return ConnectionUtils.requestRawJsonFrom(url) {
             logError("Failed requesting from Mojang API")
-            e.printStackTrace()
-            null
+            it.printStackTrace()
         }
-    }
-
-    private fun convertStreamToString(inputStream: InputStream): String {
-        val scanner = Scanner(inputStream).useDelimiter("\\A")
-        return if (scanner.hasNext()) scanner.next() else "/"
     }
 
     fun load(): Boolean {
