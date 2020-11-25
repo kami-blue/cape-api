@@ -648,6 +648,7 @@
     "capes": [
       {
         "cape_uuid": "d9069",
+        "player_uuid": "89f80e2d-4a6a-4c20-8257-fbfe55c55277",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
