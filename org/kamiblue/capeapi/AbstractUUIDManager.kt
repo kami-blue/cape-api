@@ -12,6 +12,7 @@ abstract class AbstractUUIDManager(filePath: String) {
     protected open val maxCacheSize: Int get() = 500
 
     private val file = File(filePath)
+    @Suppress("DEPRECATION")
     private val parser = JsonParser()
     private val gson = GsonBuilder().setPrettyPrinting().create()
     private val nameProfileMap = Collections.synchronizedMap(LinkedHashMap<String, PlayerProfile>())
@@ -70,7 +71,7 @@ abstract class AbstractUUIDManager(filePath: String) {
             null
         } else {
             try {
-                val jsonElement = parser.parse(response)
+                @Suppress("DEPRECATION") val jsonElement = parser.parse(response)
                 if (isUUID) {
                     val name = jsonElement.asJsonArray.last().asJsonObject["name"].asString
                     PlayerProfile(UUID.fromString(nameOrUUID), name)
