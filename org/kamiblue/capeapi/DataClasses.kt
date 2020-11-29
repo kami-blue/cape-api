@@ -1,7 +1,6 @@
 package org.kamiblue.capeapi
 
 import com.google.gson.annotations.SerializedName
-import org.kamiblue.capeapi.CapeType.*
 import java.util.*
 
 data class CapeUser(
@@ -52,7 +51,9 @@ data class CapeColor(
 }
 
 data class PlayerProfile(
+    @SerializedName("uuid", alternate = ["UUID"])
     val uuid: UUID,
+    @SerializedName("name", alternate = ["Name"])
     val name: String
 ) {
     override fun equals(other: Any?): Boolean {
