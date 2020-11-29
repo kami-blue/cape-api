@@ -243,6 +243,20 @@
     "is_premium": true
   },
   {
+    "id": 269916553171042315,
+    "capes": [
+      {
+        "cape_uuid": "ed8fd",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 557647554880208926,
     "capes": [
       {
