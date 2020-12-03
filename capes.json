@@ -95,6 +95,7 @@
     "capes": [
       {
         "cape_uuid": "76778",
+        "player_uuid": "f14c348d-4e38-415a-aba5-8688c71d7288",
         "type": "CONTEST",
         "color": {
           "primary": "90b3ff",
