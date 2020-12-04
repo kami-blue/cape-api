@@ -648,8 +648,8 @@
         "player_uuid": "a909ff12-fcf5-41ed-9b46-f5d70ce133d8",
         "type": "CONTEST",
         "color": {
-          "primary": "f67280",
-          "border": "c06c84"
+          "primary": "c06c84",
+          "border": "6c5b7b"
         }
       }
     ],
