@@ -536,14 +536,6 @@
           "primary": "333333",
           "border": "211f1f"
         }
-      },
-      {
-        "cape_uuid": "b347f",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
       }
     ],
     "is_premium": true
