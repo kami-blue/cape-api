@@ -322,6 +322,44 @@
     "is_premium": false
   },
   {
+    "id": 789233106372526151,
+    "capes": [
+      {
+        "cape_uuid": "49eb8",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "91e58",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "b4ddd",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "d67eb",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 451814881134379020,
     "capes": [
       {
@@ -660,43 +698,7 @@
   },
   {
     "id": 557647554880208926,
-    "capes": [
-      {
-        "cape_uuid": "e826c",
-        "player_uuid": "8fef1f4c-4ae0-4c2d-a11b-632bd45484f3",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "85759",
-        "player_uuid": "2ee704b1-1f48-4065-93e6-a91e8ab6ae19",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "12aa3",
-        "player_uuid": "9efad9f6-220f-40fd-9511-517df55174aa",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "886b1",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      }
-    ],
+    "capes": [],
     "is_premium": true
   },
   {
