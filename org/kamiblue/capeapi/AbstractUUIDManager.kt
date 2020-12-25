@@ -3,13 +3,17 @@ package org.kamiblue.capeapi
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
+import org.apache.logging.log4j.Logger
 import org.kamiblue.commons.utils.ConnectionUtils
 import java.io.*
 import java.util.*
 import kotlin.collections.LinkedHashMap
 
-abstract class AbstractUUIDManager(filePath: String) {
-    protected open val maxCacheSize: Int get() = 500
+abstract class AbstractUUIDManager(
+    filePath: String,
+    private val logger: Logger,
+    private val maxCacheSize: Int = 500
+) {
 
     private val file = File(filePath)
     @Suppress("DEPRECATION")
@@ -67,7 +71,7 @@ abstract class AbstractUUIDManager(filePath: String) {
         val response = if (isUUID) requestProfileFromUUID(nameOrUUID) else requestProfileFromName(nameOrUUID)
 
         return if (response.isNullOrBlank()) {
-            logError("Response is null or blank, internet might be down")
+            logger.error("Response is null or blank, internet might be down")
             null
         } else {
             try {
@@ -81,8 +85,7 @@ abstract class AbstractUUIDManager(filePath: String) {
                     PlayerProfile(UUIDUtils.fixUUID(id)!!, name) // let it throw a NPE if failed to parse the string to UUID
                 }
             } catch (e: Exception) {
-                logError("Failed parsing profile")
-                e.printStackTrace()
+                logger.error("Failed parsing profile", e)
                 null
             }
         }
@@ -98,8 +101,7 @@ abstract class AbstractUUIDManager(filePath: String) {
 
     private fun request(url: String): String? {
         return ConnectionUtils.requestRawJsonFrom(url) {
-            logError("Failed requesting from Mojang API")
-            it.printStackTrace()
+            logger.error("Failed requesting from Mojang API", it)
         }
     }
 
@@ -112,11 +114,10 @@ abstract class AbstractUUIDManager(filePath: String) {
             nameProfileMap.clear()
             uuidNameMap.putAll(cacheList.associateBy { it.uuid })
             nameProfileMap.putAll(cacheList.associateBy { it.name.toLowerCase() })
-            logError("UUID cache loaded")
+            logger.info("UUID cache loaded")
             true
         } catch (e: Exception) {
-            logError("Failed loading UUID cache")
-            e.printStackTrace()
+            logger.warn("Failed loading UUID cache", e)
             false
         } finally {
             reader.close()
@@ -128,11 +129,10 @@ abstract class AbstractUUIDManager(filePath: String) {
         return try {
             val cacheList = uuidNameMap.values.sortedBy { it.name }
             gson.toJson(cacheList, writer)
-            println("UUID cache saved")
+            logger.info("UUID cache saved")
             true
         } catch (e: Exception) {
-            logError("Failed saving UUID cache")
-            e.printStackTrace()
+            logger.warn("Failed saving UUID cache", e)
             false
         } finally {
             writer.flush()
@@ -150,13 +150,11 @@ abstract class AbstractUUIDManager(filePath: String) {
             try {
                 fileWriter.write("[]")
             } catch (e: Exception) {
-                e.printStackTrace()
+                logger.error("Failed to fix empty json", e)
             } finally {
                 fileWriter.close()
             }
         }
     }
-
-    protected abstract fun logError(message: String)
 
 }
