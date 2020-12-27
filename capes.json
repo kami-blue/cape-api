@@ -30,6 +30,20 @@
     "is_premium": true
   },
   {
+    "id": 390565374250450944,
+    "capes": [
+      {
+        "cape_uuid": "b443a",
+        "type": "SPECIAL",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": false
+  },
+  {
     "id": 228077081324421121,
     "capes": [
       {
