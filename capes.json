@@ -390,6 +390,52 @@
     "is_premium": true
   },
   {
+    "id": 384171187498123274,
+    "capes": [
+      {
+        "cape_uuid": "5318f",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "e0ae1",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "c759f",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "e1517",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "61606",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 451814881134379020,
     "capes": [
       {
