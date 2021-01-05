@@ -741,6 +741,30 @@
           "primary": "9b90ff",
           "border": "8778ff"
         }
+      },
+      {
+        "cape_uuid": "33883",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "b46b2",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "98d5b",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
       }
     ],
     "is_premium": true
