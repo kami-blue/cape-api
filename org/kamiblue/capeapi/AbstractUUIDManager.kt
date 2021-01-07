@@ -5,7 +5,8 @@ import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
 import org.apache.logging.log4j.Logger
 import org.kamiblue.commons.utils.ConnectionUtils
-import java.io.*
+import java.io.File
+import java.io.FileWriter
 import java.util.*
 import kotlin.collections.LinkedHashMap
 
@@ -19,6 +20,8 @@ abstract class AbstractUUIDManager(
     @Suppress("DEPRECATION")
     private val parser = JsonParser()
     private val gson = GsonBuilder().setPrettyPrinting().create()
+    private val type = TypeToken.getArray(PlayerProfile::class.java).type
+
     private val nameProfileMap = Collections.synchronizedMap(LinkedHashMap<String, PlayerProfile>())
     private val uuidNameMap = Collections.synchronizedMap(LinkedHashMap<UUID, PlayerProfile>())
 
@@ -107,9 +110,10 @@ abstract class AbstractUUIDManager(
 
     fun load(): Boolean {
         fixEmptyJson(file)
-        val reader = BufferedReader(FileReader(file))
         return try {
-            val cacheList = gson.fromJson<List<PlayerProfile>>(reader, object : TypeToken<List<PlayerProfile>>() {}.type)
+            val cacheList = file.bufferedReader().use {
+                gson.fromJson<Array<PlayerProfile>>(it, type)
+            }
             uuidNameMap.clear()
             nameProfileMap.clear()
             uuidNameMap.putAll(cacheList.associateBy { it.uuid })
@@ -119,24 +123,20 @@ abstract class AbstractUUIDManager(
         } catch (e: Exception) {
             logger.warn("Failed loading UUID cache", e)
             false
-        } finally {
-            reader.close()
         }
     }
 
     fun save(): Boolean {
-        val writer = BufferedWriter(FileWriter(file, false))
         return try {
             val cacheList = uuidNameMap.values.sortedBy { it.name }
-            gson.toJson(cacheList, writer)
+            file.bufferedWriter().use {
+                gson.toJson(cacheList, it)
+            }
             logger.info("UUID cache saved")
             true
         } catch (e: Exception) {
             logger.warn("Failed saving UUID cache", e)
             false
-        } finally {
-            writer.flush()
-            writer.close()
         }
     }
 
