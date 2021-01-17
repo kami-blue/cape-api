@@ -27,7 +27,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 209554152584380420,
@@ -57,7 +57,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 390565374250450944,
@@ -218,7 +218,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 558144372969832449,
@@ -233,7 +233,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 216862330724548608,
@@ -380,7 +380,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 789233106372526151,
@@ -508,7 +508,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 557429876618166283,
@@ -523,7 +523,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 225033929118318592,
@@ -577,7 +577,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 223864295300136960,
@@ -631,7 +631,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 445230814066769921,
@@ -826,7 +826,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 438874746860470272,
@@ -841,7 +841,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 637302865047584788,
@@ -856,7 +856,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 413924242271371264,
@@ -885,7 +885,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 557647554880208926,
@@ -905,7 +905,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 609779091247333389,
@@ -959,7 +959,7 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   },
   {
     "id": 389064678896041986,
@@ -1152,6 +1152,6 @@
         }
       }
     ],
-    "is_premium": false
+    "is_premium": true
   }
 ]
