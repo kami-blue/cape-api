@@ -705,6 +705,7 @@
     "capes": [
       {
         "cape_uuid": "1464a",
+        "player_uuid": "d527f7a0-3b72-4586-846d-2a50cd4bb761",
         "type": "CONTRIBUTOR",
         "color": {
           "primary": "333333",
@@ -713,6 +714,7 @@
       },
       {
         "cape_uuid": "8a903",
+        "player_uuid": "9f304ade-65fa-449e-853a-cc96f169a2fd",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
