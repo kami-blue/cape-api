@@ -153,6 +153,21 @@
     "is_premium": false
   },
   {
+    "id": 242462997530804225,
+    "capes": [
+      {
+        "cape_uuid": "71565",
+        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 661587372865093645,
     "capes": [
       {
@@ -755,26 +770,7 @@
   },
   {
     "id": 563138570953687061,
-    "capes": [
-      {
-        "cape_uuid": "d5231",
-        "player_uuid": "10d4ea71-fbc0-43a3-b7e3-6470549c3080",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "7d258",
-        "player_uuid": "47f78584-c76c-4191-92fd-8c943af13054",
-        "type": "CONTRIBUTOR",
-        "color": {
-          "primary": "333333",
-          "border": "211f1f"
-        }
-      }
-    ],
+    "capes": [],
     "is_premium": true
   },
   {
