@@ -1,5 +1,20 @@
 [
   {
+    "id": 82981134597619712,
+    "capes": [
+      {
+        "cape_uuid": "da6eb",
+        "player_uuid": "77ad1f12-50fe-422b-8171-7a6a2b294b35",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 583478940459466783,
     "capes": [],
     "is_premium": true
