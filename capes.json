@@ -4,6 +4,7 @@
     "capes": [
       {
         "cape_uuid": "da6eb",
+        "player_uuid": "6a93f6de-02bc-47e9-a59f-4dbfcc1e8a89",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
