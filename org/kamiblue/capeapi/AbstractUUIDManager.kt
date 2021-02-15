@@ -4,6 +4,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import com.google.gson.reflect.TypeToken
 import org.apache.logging.log4j.Logger
+import org.kamiblue.commons.extension.synchronized
 import org.kamiblue.commons.utils.ConnectionUtils
 import java.io.File
 import java.io.FileWriter
@@ -22,8 +23,8 @@ abstract class AbstractUUIDManager(
     private val gson = GsonBuilder().setPrettyPrinting().create()
     private val type = TypeToken.getArray(PlayerProfile::class.java).type
 
-    private val nameProfileMap = Collections.synchronizedMap(LinkedHashMap<String, PlayerProfile>())
-    private val uuidNameMap = Collections.synchronizedMap(LinkedHashMap<UUID, PlayerProfile>())
+    private val nameProfileMap = LinkedHashMap<String, PlayerProfile>().synchronized()
+    private val uuidNameMap = LinkedHashMap<UUID, PlayerProfile>().synchronized()
 
     fun getByString(stringIn: String?) = stringIn?.let { string ->
         UUIDUtils.fixUUID(string)?.let { getByUUID(it) } ?: getByName(string)
@@ -35,7 +36,7 @@ abstract class AbstractUUIDManager(
                 // If UUID already present in nameUuidMap but not in uuidNameMap (user changed name)
                 nameProfileMap[profile.name]?.let { uuidNameMap.remove(it.uuid) }
                 nameProfileMap[profile.name] = profile
-            }
+            } ?: return null
         }.also {
             trimMaps()
         }
@@ -47,7 +48,7 @@ abstract class AbstractUUIDManager(
                 // If UUID already present in uuidNameMap but not in nameUuidMap (user changed name)
                 uuidNameMap[profile.uuid]?.let { nameProfileMap.remove(it.name) }
                 uuidNameMap[profile.uuid] = profile
-            }
+            } ?: return null
         }.also {
             trimMaps()
         }
