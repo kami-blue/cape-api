@@ -578,6 +578,20 @@
     "is_premium": true
   },
   {
+    "id": 411466248707244062,
+    "capes": [
+      {
+        "cape_uuid": "f8502",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 557429876618166283,
     "capes": [
       {
