@@ -104,17 +104,7 @@
   },
   {
     "id": 228077081324421121,
-    "capes": [
-      {
-        "cape_uuid": "3ce30",
-        "player_uuid": "39edc4c4-19ce-4b10-ae65-da6d56771a1a",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      }
-    ],
+    "capes": [],
     "is_premium": true
   },
   {
@@ -1027,6 +1017,21 @@
         "color": {
           "primary": "333333",
           "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
+    "id": 808003554362392596,
+    "capes": [
+      {
+        "cape_uuid": "e24d3",
+        "player_uuid": "39edc4c4-19ce-4b10-ae65-da6d56771a1a",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
         }
       }
     ],
