@@ -1118,6 +1118,21 @@
     "is_premium": false
   },
   {
+    "id": 605330962322292746,
+    "capes": [
+      {
+        "cape_uuid": "9c404",
+        "player_uuid": "207c75d9-e872-477d-9429-d8b422d479e6",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 550907912281915412,
     "capes": [
       {
