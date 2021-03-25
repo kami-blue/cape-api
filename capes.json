@@ -1256,11 +1256,20 @@
     "capes": [
       {
         "cape_uuid": "cdebb",
-        "player_uuid": "0e89f5c1-8211-49f2-bbc5-b3d88b1c91f8",
+        "player_uuid": "14358659-1ec5-4140-bf7d-471b9044f71b",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
           "border": "8778ff"
+        }
+      },
+      {
+        "cape_uuid": "cd078",
+        "player_uuid": "0e89f5c1-8211-49f2-bbc5-b3d88b1c91f8",
+        "type": "CONTRIBUTOR",
+        "color": {
+          "primary": "333333",
+          "border": "211f1f"
         }
       }
     ],
