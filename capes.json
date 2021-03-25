@@ -177,46 +177,6 @@
           "primary": "333333",
           "border": "211f1f"
         }
-      },
-      {
-        "cape_uuid": "2206c",
-        "type": "DONOR",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "9d1aa",
-        "type": "SPECIAL",
-        "color": {
-          "primary": "9b90ff",
-          "border": "8778ff"
-        }
-      },
-      {
-        "cape_uuid": "6d16f",
-        "type": "CONTEST",
-        "color": {
-          "primary": "90b3ff",
-          "border": "3869d1"
-        }
-      },
-      {
-        "cape_uuid": "38561",
-        "type": "BOOSTER",
-        "color": {
-          "primary": "e68cc8",
-          "border": "ffa0e6"
-        }
-      },
-      {
-        "cape_uuid": "24aba",
-        "type": "INVITER",
-        "color": {
-          "primary": "de90ff",
-          "border": "9c30c9"
-        }
       }
     ],
     "is_premium": true
