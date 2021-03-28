@@ -530,6 +530,21 @@
     "is_premium": true
   },
   {
+    "id": 391035645365321731,
+    "capes": [
+      {
+        "cape_uuid": "daaa8",
+        "player_uuid": "5fbb90ef-fb31-4b4f-9516-b16b53f641c7",
+        "type": "DONOR",
+        "color": {
+          "primary": "9b90ff",
+          "border": "8778ff"
+        }
+      }
+    ],
+    "is_premium": true
+  },
+  {
     "id": 451814881134379020,
     "capes": [
       {
