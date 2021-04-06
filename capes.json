@@ -214,6 +214,14 @@
           "primary": "333333",
           "border": "211f1f"
         }
+      },
+      {
+        "cape_uuid": "ef50a",
+        "type": "CONTEST",
+        "color": {
+          "primary": "90b3ff",
+          "border": "3869d1"
+        }
       }
     ],
     "is_premium": true
