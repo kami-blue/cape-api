@@ -567,6 +567,7 @@
       },
       {
         "cape_uuid": "c759f",
+        "player_uuid": "5f1411ef-23f2-4bcf-a6d0-6178a9744dc1",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
@@ -575,6 +576,7 @@
       },
       {
         "cape_uuid": "e1517",
+        "player_uuid": "45074365-ab12-4000-b510-974e44140df5",
         "type": "DONOR",
         "color": {
           "primary": "9b90ff",
